@@ -63,5 +63,13 @@
       font-size: 50%;
   }
 
+  .menu a:hover, .relatedMenu a:hover, .sourceLink:hover, .sourceLinkWhite:hover, .sourceLinkBlackToWhite:hover, .sourceLinkWhiteToBlack:hover {
+  	background: lightgray;
+  }
+  
+  .menu li {
+      width: 25%;
+  }
+
 </style>
 
