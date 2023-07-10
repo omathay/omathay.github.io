@@ -1,5 +1,18 @@
 
 <style>
+  * {
+      box-sizing: border-box;
+  }
+  
+  #wrapper {
+      display: grid;
+      height: 100vh;
+      grid-template-areas: "header"
+                           "main"
+                           "footer";
+      max-width: 1200px;
+  }
+
   link {
     /* Changes the color of the link URLs on your site */
     color: #0099FF;
