@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'starkregular';
-    src: url('../../stark-font/stark-webfont.woff2') format('woff2'),
-         url('../../stark-font/stark-webfont.woff') format('woff');
+    src: url('stark-font/stark-webfont.woff2') format('woff2'),
+         url('stark-font/stark-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
