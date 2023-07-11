@@ -38,6 +38,10 @@
     vertical-align: bottom;
     /* Set the color of the text inside of the <body> tags */
     color: #505050;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
   }
 
   h1, h2, h3 {
