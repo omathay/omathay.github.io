@@ -125,5 +125,11 @@
       width: 33%;
   }
 
+  @media screen and (min-width: 1200px) {
+      #wrapper {
+          height: 96vh;
+          margin: 0.5vh auto;
+      }
+
 </style>
 
