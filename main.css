@@ -39,6 +39,43 @@
     /* Set the color of the text inside of the <body> tags */
     color: #505050;
   }
+
+  h1, h2, h3 {
+      font-weight: 700;
+  }
+  
+  p {
+      font-weight: 300;
+  }
+  
+  header {
+      grid-area: header;
+      float: left;
+      margin: 3rem 5rem 1rem 5rem;
+  }
+  
+  main {
+      grid-area: main;
+      display: grid;
+      grid-template-areas: "nav"
+                           "preview"
+                           "faceImage"
+                           "about"
+                           "skillsandquals"
+                           "games"
+                           "music"
+                           "stories";
+  }
+  
+  footer {
+      grid-area: footer;
+      transform: translateY(-175px);
+  }
+  
+  footer h1 {
+      margin-right: 3rem;
+      margin-left: 3rem;
+  }
   /* We will use the centering styling here for our <divs>, but it will only work when we use class=center */
   .center {
     margin: auto;
