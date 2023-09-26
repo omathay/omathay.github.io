@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-  padding: 2vwmax;
 }
 
 #site-wrapper {
@@ -29,7 +28,87 @@
   pointer-events: auto;
 }
 
-@media only screen and (pointer: coarse) and (max-width: 1024px), screen and (max-width: 799px) {
-  
+.header-inner-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+}
+
+.header-display {
+  position: relative;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-navigation-title-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1 0 67%;
+  align-items: center;
+}
+
+.header-actions {
+  flex-grow: 0;
+  flex-shrink: 1;
+  display: inline-flex;
+  width: 33%;
+  align-items: center;
+}
+
+.header-actions--right {
+  justify-content: flex-end;
+}
+
+.header-navigation {
+  width: 33%;
+  flex: 1 1 33%;
+}
+
+.header-navigation .header-navigation-item:not(:last-child) {
+  margin-right: 1.5vw;
+}
+
+.header-navigation-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.header-navigation-list>div {
+  white-space: nowrap;
+}
+
+.header-navigation-item {
+  /* 
+  font-family
+  font-style
+  font-weight
+  line-height
+  letter-spacing
+  text-transform
+  */
+}
+
+.header-title {
+  width: 34%;
+  text-align: center;
+  flex: 1 1 34%;
+}
+
+@media only screen and (max-width: 799px) {
+  .header-top-bar-wrapper {
+    padding: 2vwmax;
+  }
+}
+
+@media only screen and (pointer: coarse) and(max-width: 1024px), screen and(max-width: 799px) {
+    .header-nav {
+        display:none
+    }
 }
 </style>
