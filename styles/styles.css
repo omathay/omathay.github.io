@@ -4,6 +4,45 @@
   box-sizing: border-box;
 }
 
+:root {
+  base-text-val: 16px;
+  header-font-family: aktiv-grotesk;
+  header-font-style: normal;
+  header-font-weight: 400;
+  header-font-transform: uppercase;
+  header-font-spacing: 0.2em;
+  header-font-height: 1.8em;
+  header-font-size: .9rem;
+  header-font-size-val: .9;
+  title-font-family: courier-std;
+  title-font-style: normal;
+  title-font-weight: 400;
+  title-font-height: 1.325em;
+  title-font-spacing: normal;
+}
+
+body {
+  font-size: var(base-text-val);
+}
+
+@media screen and (max-width: 767px) and(orientation: portrait) {
+    .site-wrapper {
+        font-size:calc((var(header-font-size-val) - 1) * calc(.012 * min(100vh, 900px)) + 1rem)
+    }
+}
+
+@media screen and (min-width: 768px), screen and(max-width: calc(1944px - 1px)) and(orientation: landscape) {
+    .site-wrapper {
+        font-size:calc((var(header-font-size-val) - 1) * 1.2vw + 1rem)
+    }
+}
+
+@media screen and (min-width: 1944px) {
+    .site-wrapper {
+        font-size:calc(var(header-font-size-val) * 1rem)
+    }
+}
+
 #site-wrapper {
   display: flex;
   flex-direction: column;
@@ -84,14 +123,12 @@
 }
 
 .header-navigation-item {
-  /* 
-  font-family
-  font-style
-  font-weight
-  line-height
-  letter-spacing
-  text-transform
-  */
+  font-family: var(header-font-family);
+  font-style: var(header-font-style);
+  font-weight: var(header-font-weight);
+  line-height: var(header-font-height);
+  letter-spacing: var(header-font-spacing);
+  text-transform: var(header-font-transform);
 }
 
 .header .header-navigation-wrapper-inner a, .header .language-item a {
@@ -109,14 +146,12 @@
 
 .header-title-text {
   margin: 0;
-  /*
-  font-family
+  font-family: 
   font-style
   font-weight
   line-height
   letter-spacing
   text-transform
-  */
 }
 
 .header-actions .header-actions-action--social {
