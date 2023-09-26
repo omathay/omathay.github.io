@@ -1,1 +1,35 @@
+<style>
 
+* {
+  box-sizing: border-box;
+  padding: 2vwmax;
+}
+
+#site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  position: fixed;
+  margin: 3rem 5rem 1rem 5rem;
+}
+
+.header-top-bar-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 2.2vw;
+  padding-bottom: 2.2vw;
+  pointer-events: auto;
+}
+
+@media only screen and (pointer: coarse) and (max-width: 1024px), screen and (max-width: 799px) {
+  
+}
+</style>
