@@ -6,7 +6,7 @@
 
 :root {
   --base-text-val: 16px;
-  --header-font-family: stark-regular;
+  --header-font-family: starkregular;
   --header-font-style: normal;
   --header-font-weight: 400;
   --header-font-transform: uppercase;
@@ -14,7 +14,7 @@
   --header-font-height: 1.8em;
   --header-font-size: .9rem;
   --header-font-size-val: .9;
-  --title-font-family: stark-regular;
+  --title-font-family: starkregular;
   --title-font-style: normal;
   --title-font-weight: 400;
   --title-font-height: 1.325em;
