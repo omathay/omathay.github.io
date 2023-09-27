@@ -19,6 +19,7 @@
   --title-font-weight: 400;
   --title-font-height: 1.325em;
   --title-font-spacing: normal;
+  --title-font-transform: uppercase;
 }
 
 body {
@@ -146,12 +147,12 @@ body {
 
 .header-title-text {
   margin: 0;
-  font-family: 
-  font-style
-  font-weight
-  line-height
-  letter-spacing
-  text-transform
+  font-family: var(--title-font-family);
+  font-style: var(--title-font-style);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-font-height);
+  letter-spacing: var(--title-font-spacing);
+  text-transform: var(--title-font-transform);
 }
 
 .header-actions .header-actions-action--social {
