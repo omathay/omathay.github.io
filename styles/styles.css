@@ -1,9 +1,5 @@
 <style>
 
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --base-text-val: 16px;
   --header-font-family: starkregular;
@@ -20,6 +16,10 @@
   --title-font-height: 1.325em;
   --title-font-spacing: normal;
   --title-font-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
